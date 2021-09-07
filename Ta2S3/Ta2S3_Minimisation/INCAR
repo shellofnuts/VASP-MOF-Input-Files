@@ -1,0 +1,43 @@
+SYSTEM = Ta2S3
+PREC = Accurate
+
+ISTART = 0
+ICHARG = 0
+ISPIN = 2
+
+MAGMOM = 2.0 2.0 3*0.0
+
+ENCUT = 500
+LREAL = .FALSE.
+LWAVE = .TRUE.
+LCHARG = .TRUE.
+
+LHFCALC  = .TRUE.
+HFSCREEN = 0.3 
+
+NELM = 200
+NPAR = 8
+
+ISMEAR = 0
+SIGMA = 0.05
+
+IBRION = 1           ! -1 Fix atoms, 1 quasi-Newton algorithm, 2 ConjGrad for relax
+POTIM = 0.1         ! Scaling factor for forces if ibrion = 1, 2 or 3
+NSW    = 200         ! Number of ionic steps
+
+EDIFFG = -0.01
+ISIF   = 3
+
+LDAU = .TRUE.
+LDAUTYPE = 2
+LDAUL = 2 -1
+LDAUU = 3.0 0.0 
+LDAUJ = 0.0 0.0 
+LMAMAXMIX = 4
+LDAUPRINT = 2
+
+#LORBIT = 11
+#NEDOS = 2000
+
+
+

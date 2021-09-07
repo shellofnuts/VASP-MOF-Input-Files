@@ -1,0 +1,37 @@
+SYSTEM = MnPc Network 2D MOF
+PREC = Accurate
+
+ISTART = 0
+ICHARG = 0
+ISPIN = 2
+
+MAGMOM = 1*3.0 8*0.0 32*0.0 16*0.0
+
+ENCUT = 415
+LREAL = .FALSE.
+LWAVE = .FALSE.
+LCHARG = .TRUE.
+
+NELM = 200
+NPAR = 8
+
+LDAU = .TRUE.
+LDAUTYPE = 1
+LDAUL = 2 -1 -1 -1
+LDAUU = 4.0 0.0 0.0 0.0
+LDAUJ = 1.0 0.0 0.0 0.0
+LMAXMIX = 4
+LDAUPRINT = 2
+
+ISMEAR = 0
+SIGMA = 0.1
+
+IBRION = 1           ! -1 Fix atoms, 1 quasi-Newton algorithm, 2 ConjGrad for relax
+POTIM = 0.1         ! Scaling factor for forces if ibrion = 1, 2 or 3
+NSW    = 200         ! Number of ionic steps
+
+EDIFFG = -0.01
+ISIF   = 2
+
+#LORBIT = 11
+#NEDOS = 2000
